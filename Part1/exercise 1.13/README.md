@@ -6,6 +6,8 @@ Create a Dockerfile for the project (example-backend) and give a command so that
 
 When you start the container and navigate to http://localhost:8080/ping you should get a “pong” as response.
 
+![result](result.png)
+
 Do not alter the code of the project
 
 Submit the Dockerfile and the command used.
