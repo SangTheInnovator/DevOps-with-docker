@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: hello-frontend 
+    build: ..\..\Part1\exercise 1.12\hello-frontend
+    ports: 
+      - 5000:5000
+  backend:
+    container_name: hello-backend 
+    build: ..\..\Part1\exercise 1.13\hello-backend
+    ports: 
+      - 8080:8080
