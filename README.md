@@ -37,7 +37,21 @@ By the end of this part, you are able:
 - Manually scale applications
 - Use 3rd party services, such as databases, inside containers as part of your project
 
+## Part 3
 
+Introduction to production-ready practices such as container optimization and deployment pipelines:
+
+- Official Images and trust
+- Deployment pipelines
+- Using a non-root user
+- Optimizing the image size
+- Multi-host environments
+
+By the end of this part, you are able:
+
+- Critically examine the images that you pull
+- Trim the container size and image build time via multiple methods such as multi-stage builds
+- Automatically deploy containers
 
 
 
