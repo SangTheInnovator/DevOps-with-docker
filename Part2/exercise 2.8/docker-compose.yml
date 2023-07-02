@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: front-end 
+    build: ..\..\Part1\exercise 1.12\hello-frontend
+    environment:
+      REACT_APP_BACKEND_URL: http://localhost:80
+  backend:
+    container_name: back-end 
+    build: ..\..\Part1\exercise 1.13\hello-backend
+    environment:
+      REDIS_HOST: redis 
+      POSTGRES_HOST: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DATABASE: postgres
+      REQUEST_ORIGIN: http://localhost:80
+    depends_on:
+      - redis 
+      - postgres
+  redis:
+    container_name: redis
+    image: redis 
+    restart: unless-stopped
+  postgres:
+    container_name: postgres
+    image: postgres 
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DATABASE: postgres
+  nginx:
+    container_name: nginx
+    image: nginx 
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.config:/etc/nginx/nginx.conf 
