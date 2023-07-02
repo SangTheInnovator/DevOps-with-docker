@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: frontend 
+    build: ..\..\Part1\exercise 1.12\hello-frontend
+    ports: 
+      - 5000:5000
+  backend:
+    container_name: backend 
+    build: ..\..\Part1\exercise 1.13\hello-backend
+    environment:
+      REDIS_HOST: redis 
+    depends_on:
+      - redis 
+    ports: 
+      - 8080:8080
+  redis:
+    container_name: redis-cache
+    image: redis 
+    restart: unless-stopped
