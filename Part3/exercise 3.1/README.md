@@ -21,4 +21,4 @@ Now your deployment pipeline is set up! Ensure that it works:
 
 - reload the browser to ensure that Watchtower has started the new version (that is, your changes are visible)
 
-Submit a link to the repository with the config: ![link](https://github.com/SangTheInnovator/express-app-CI)
+Submit a link to the repository with the config: [link](https://github.com/SangTheInnovator/express-app-CI)
