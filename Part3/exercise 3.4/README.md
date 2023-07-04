@@ -12,6 +12,7 @@ watchtower:
 ```
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
+
 In practice, this means that Watchtower can run commands on Docker the same way we can "command" Docker from the cli with docker ps, docker run, etc.
 
 We can easily use the same trick in our own scripts!
@@ -27,5 +28,6 @@ docker run -e DOCKER_USER=mluukkai \
   -v /var/run/docker.sock:/var/run/docker.sock \
   builder mluukkai/express_app mluukkai/testing2
 ```
+
 
 > Note that now the Docker Hub credentials are defined as environment variables since the script needs to log in to Docker Hub for the push.
