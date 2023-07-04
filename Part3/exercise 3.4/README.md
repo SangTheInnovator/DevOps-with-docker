@@ -30,4 +30,5 @@ docker run -e DOCKER_USER=mluukkai \
 ```
 
 <br>
+
 > Note that now the Docker Hub credentials are defined as environment variables since the script needs to log in to Docker Hub for the push.
