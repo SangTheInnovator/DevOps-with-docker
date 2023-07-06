@@ -1,4 +1,4 @@
-## Exercise 3.3: Building images inside of the container
+## Exercise 3.3: Building images inside of a container
 
 Create a new script/program that downloads a repository from GitHub, builds a Dockerfile located in the root, and then publishes it into the Docker Hub.
 
